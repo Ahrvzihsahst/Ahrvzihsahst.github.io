@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <!-- Link to Bootstrap CSS (make sure to replace the URL with the actual path to Bootstrap) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- Optional: Add your custom CSS (styles.css) after Bootstrap to override or extend styles -->
+    <!--link rel="stylesheet" href="styles.css"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Your Name</h1>
+        <p class="lead">Web Developer | Programmer | Your Skills</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="container my-5">
+        <h2 class="display-4">About Me</h2>
+        <p>Your introduction and professional goals go here.</p>
+    </section>
+
+    <section id="portfolio" class="container my-5">
+        <h2 class="display-4">Portfolio</h2>
+        <!-- Add your projects here using Bootstrap components -->
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <img src="project-image-1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Project Title 1</h3>
+                        <p class="card-text">Description of your project. Include technologies used and your role.</p>
+                        <a href="#projectModal1" class="btn btn-primary" data-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Project 1 -->
+            <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModal1Label">Project Title 1</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>This is where you can provide details about Project 1. Describe the project, the
+                                technologies
+                                used, your role, and any other relevant information.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-lg-6">
+                <div class="card mb-4">
+                    <img src="project-image-2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Project Title 2</h3>
+                        <p class="card-text">Description of your project. Include technologies used and your role.</p>
+                        <a href="#projectModal2" class="btn btn-primary" data-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Project 2 -->
+            <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModal2Label">Project Title 2</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Project details and additional information can be placed here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <section id="skills" class="container my-5">
+        <h2 class="display-4">Skills</h2>
+        <div class="row">
+            <!-- Skill Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4"
+                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                    <div class="card-body">
+                        <i class="fas fa-code fa-3x"></i> <!-- Font Awesome icon for coding -->
+                        <h3 class="card-title" style="color: #291ce0">Programming Languages</h3>
+                        <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Python</strong>,
+                            <em>JavaScript</em>, and more.</p>
+                        <div class="skill-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 out of 5 stars -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4"
+                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                    <div class="card-body">
+                        <i class="fas fa-chart-bar fa-3x"></i> <!-- Font Awesome icon for coding -->
+                        <h3 class="card-title" style="color: #291ce0">Programming Languages</h3>
+                        <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Python</strong>,
+                            <em>JavaScript</em>, and more.</p>
+                        <div class="skill-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 out of 5 stars -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Skill Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4"
+                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                    <div class="card-body">
+                        <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
+                        <h3 class="card-title" style="color: #291ce0">Programming Languages</h3>
+                        <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Python</strong>,
+                            <em>JavaScript</em>, and more.</p>
+                        <div class="skill-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 out of 5 stars -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4"
+                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                    <div class="card-body">
+                        <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
+                        <h3 class="card-title" style="color: #291ce0">Programming Languages</h3>
+                        <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Python</strong>,
+                            <em>JavaScript</em>, and more.</p>
+                        <div class="skill-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 out of 5 stars -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4"
+                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                    <div class="card-body">
+                        <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
+                        <h3 class="card-title" style="color: #291ce0">Programming Languages</h3>
+                        <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Python</strong>,
+                            <em>JavaScript</em>, and more.</p>
+                        <div class="skill-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 out of 5 stars -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill Card 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4"
+                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                    <div class="card-body">
+                        <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
+                        <h3 class="card-title" style="color: #291ce0">Programming Languages</h3>
+                        <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Python</strong>,
+                            <em>JavaScript</em>, and more.</p>
+                        <div class="skill-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 out of 5 stars -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more skill cards as needed -->
+    </section>
+
+    </section>
+
+
+    <section id="education" class="container my-5">
+        <h2 class="display-4">Education</h2>
+        <!-- Add your educational background here using Bootstrap classes -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Degree Name</h3>
+                <p>School/University Name</p>
+                <p>Year of Graduation</p>
+            </div>
+            <!-- Add more education sections as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="display-4">Contact Me</h2>
+        <p>You can reach me at your.email@example.com</p>
+    </section>
+
+    <footer class="bg-primary text-white text-center py-2">
+        <p>Contact: +91 6371895195 | Email: biswajit.officialmail@gmail.com | Address: Srinivasa Nagar, Ameerpet,
+            Hyderabad, Telangana, 500016</p>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+
+</html>
