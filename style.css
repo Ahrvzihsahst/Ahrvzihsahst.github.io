@@ -1,0 +1,184 @@
+p {
+    margin-bottom: 0px;
+    /* Adjust the value to control the space between paragraphs */
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #291ce0, #0a0636);
+    /* Gradient background */
+    height: 20vh;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Add padding for spacing */
+    text-size-adjust: auto;
+}
+.navbar1 {
+    margin-left: -120px;
+    font-size: 16px;
+    /* Adjust font size */
+}
+
+.navbar1 ul li {
+    list-style: none;
+    margin-right: 20px;
+    /* Add right margin for spacing between links */
+    display: inline-block;
+    /* Display links horizontally with spacing */
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    /* Smooth color transition on hover */
+}
+
+.navbar1 ul li a:hover {
+    color: #FFD700;
+    /* Change color on hover (gold in this example) */
+}
+
+.profileimage {
+    background-color: red;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url('image/My_Resume_pic.png');
+    background-size: cover;
+    transition: transform 0.3s;
+    /* Add image scaling transition */
+    margin-bottom: -20px;
+    margin-top: -18px;
+    /* Move the image 10px upward */
+}
+
+.fdiv {
+    align-items: center;
+    text-align: center;
+}
+
+/* body {
+            background-image: linear-gradient(to bottom right, #ff3333, #ffcc00); /* Background gradient */
+/* } */
+body {
+    background: linear-gradient(135deg, #1576d8, #eaedf0);
+    /* Adjust the colors as per your preference */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for profile image on hover */
+.profileimage:hover {
+    transform: scale(1.1);
+    /* Scale the image on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add box-shadow on hover */
+}
+
+.card1 {
+    width: 355px;
+    /* Set the card width */
+    padding: 10px;
+    /* Add padding inside the card */
+    border: 1px solid #ccc;
+    /* Add a border around the card */
+    border-radius: 20px;
+    /* Round the corners of the card */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Add a box shadow for depth */
+    background: linear-gradient(135deg, #cbe470, #9ab1c9);
+    /* Set the background color of the card */
+    text-align: start;
+    /* Center-align the content */
+    transition: transform 0.2s all 1s ease-out;
+    /* Add a small transformation on hover for interactivity */
+    margin: 3px;
+    /* Create spacing between skill cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Slightly scale up on hover for a subtle interaction */
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+/* CSS for education section */
+.timeline-badge {
+    background-color: linear-gradient(135deg, #1576d8, #eaedf0);
+    /* Add a background color to the timeline badge */
+    color: #0a0a0a;
+}
+
+.timeline-panel {
+    background-color: linear-gradient(135deg, #89eea2, #eaedf0);
+    /* Add a background color to the timeline panel */
+    border: 2px solid #c0bfd6;
+    /* Add a border around the panel */
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.timeline-panel:hover {
+    background-color: yellowgreen;
+    /* Change background color on hover */
+    color: #fdfdfd;
+}
+
+/* Change icon size */
+.social-icons a i {
+    font-size: 24px;
+    /* Adjust the font-size as needed */
+}
+
+/* Reduce the font size of text in the footer */
+.footer-text {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+}
+
+.social-icons {
+    /* Center-align the social icons */
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px 10px;
+    /* Add space between social icons */
+    text-decoration: none;
+    color: #333;
+    /* Text color for the icons */
+    font-size: 24px;
+    /* Icon size */
+}
+
+/* Add hover effect to icons */
+.social-icons a:hover {
+    color: #007bff;
+
+    /* Change the color on hover (blue in this example) */
+    p {
+        margin-bottom: 0px;
+        /* Adjust the value to control the space between paragraphs */
+    }
+
+    .mainfooter {
+        height: 50px;
+    }
+
+
+}
