@@ -16,9 +16,12 @@ p {
     font-size: 20px;
     text-align: center;
     /* Center-align text */
-    padding: 20px;
+    padding: -20px;
     /* Add padding for spacing */
     text-size-adjust: auto;
+}
+.fdiv p {
+    margin-bottom: 0px;
 }
 .navbar1 {
     margin-left: -120px;
@@ -181,4 +184,48 @@ a {
     }
 
 
+}
+
+.display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 200;
+    line-height: 1;
+}
+.certificate img {
+    width: 100%; /* Image takes the full width of its container */
+}
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+    border: 3px;
+}
+
+.certificate {
+    width: 30%; /* Adjust the width as needed */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.certificate img {
+    width: 100%; /* Image takes the full width of its container */
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.certificate h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.certificate p {
+    color: #f5f125;
+    font-size: 16px;
 }

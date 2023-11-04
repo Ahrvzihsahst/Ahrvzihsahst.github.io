@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biswajit - Portfolio</title>
     <!-- Link to Bootstrap CSS (make sure to replace the URL with the actual path to Bootstrap) -->
-    <!-- Optional: Add your custom CSS (styles.css) after Bootstrap to override or extend styles -->
+    <!-- Css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- JavaScript -->
     <script src="myscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
 
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     <header class="head">
         <div class="fdiv">
             <div style="font-size: larger;">Biswajit Jena</div>
             <P style="font-size: medium; font-style: oblique;">Data Analyst|Data Engineer|Machine Learning Engineer</P>
-            <P style="font-size: medium; font-style: oblique;">AI Engineer|Data Scientist</P>
+            <p style="font-size: medium; font-style: oblique;">AI Engineer|Data Scientist</p>
         </div>
         <div>
             <div class="navbar1">
@@ -34,7 +36,7 @@
                     <li class="m-2"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-
+            <script src="myscript.js"></script>
         </div>
         <div>
             <div class="profileimage">
@@ -44,18 +46,59 @@
         </div>
     </header>
 
-<!-- About me Section -->
+    <!-- About me Section -->
+    <style>
+        .my-linkedin-badge {
+            width: 100px;
+            /* Set the width you desire */
+            height: 20px;
+            /* Set the height you desire */
+        }
+    </style>
     <section id="about" class="container my-5">
-        <h2 class="display-4">About Me</h2>
-        <p>I'm a passionate and results-driven data science enthusiast with a love for turning data into meaningful
-            insights. With a strong foundation in machine learning and data analysis, I've honed my skills through a
-            variety of projects that showcase my problem-solving abilities and dedication to making data-driven
-            decisions.</p>
+        <div class="row">
+            <h2 class="display-4">About Me</h2>
+            <p class="col-lg-12">I'm a passionate and results-driven data science enthusiast with a love for turning data
+                into meaningful
+                insights. With a strong foundation in machine learning and data analysis, I've honed my skills through a
+                variety of projects that showcase my problem-solving abilities and dedication to making data-driven
+                decisions.
+            </p>
+        </div>
     </section>
-
-<!-- Project Section -->
+    <section id="certificates" class="container my-5">
+        <h2 class="display-6">Certificates</h2>
+        <div class="certificates-container">
+            <!-- Certificate 1 -->
+            <div class="certificate">
+                <img src="image/Biswajit Jena CollegeInternship 6th Sem_page-0001.jpg" alt="Certificate 1" height="210">
+                <p>Internship on ML and DL Using PARAM SHAVAK system</p>
+            </div>
+            <!-- Certificate 2 -->
+            <div class="certificate">
+                <img src="image/Accenture Data Analytics certificate_page-0001.jpg" alt="Certificate 2">
+                <p>Data Analytics & Visualizatioin Job Simulation</p>
+            </div>
+            <!-- Certificate 3 -->
+            <div class="certificate">
+                <img src="image/LearnTube Machine Learning Certificate.jpeg" alt="Certificate 3">
+                <p>Machine Learning</p>
+            </div>
+            <div class="certificate">
+                <img src="image/Biswajit Jena_Python Nano Degree Course_page-0001.jpg" alt="Certificate 3">
+                <p>Python Programming</p>
+            </div>
+            <!-- <div class="certificate">
+                <img src="image/Biswajit Jena_Python Nano Degree Course_page-0001.jpg" alt="Certificate 3">
+                <p>Python Programming</p>
+            </div> -->
+            <!-- Add more certificates as needed -->    
+        </div>
+    </section>
+    
+    <!-- Project Section -->
     <section id="portfolio" class="container my-5">
-        <h2 class="display-4">Projects</h2>
+        <h2 class="display-4">My Projects</h2>
         <!-- Add your projects here using Bootstrap components -->
         <div class="row">
             <!-- Project 1 -->
@@ -128,7 +171,7 @@
                             harnessing the power of artificial intelligence and computer vision, we are reshaping the
                             way medical professionals approach the assessment of patient health.
                         </p>
-                        <a href="#projectModal2" class="btn btn-primary" data-toggle="modal">View Details</a>
+                        <a href="#projectModal2" target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
                     </div>
                 </div>
             </div>
@@ -491,7 +534,7 @@
         </div>
     </section>
 
-<!-- Contact me section -->
+    <!-- Contact me section -->
     <section id="contact" class="container my-5">
         <div class="row">
             <div class="col-md-6 ">
@@ -519,6 +562,8 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+            </div>
+
         </div>
     </section>
 
@@ -528,14 +573,14 @@
             <div class="row">
                 <div class="col-md-12  mt-4">
                     <ul class="list-inline social-icons">
-                        <li class="list-inline-item"><a href="https://www.facebook.com/bestbesharambiswajit.bitto" target="_blank"><i
-                                    class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/bestbesharambiswajit.bitto"
+                                target="_blank"><i class="fab fa-facebook"></i></a></li>
                         <!-- <li class="list-inline-item"><a href="https://twitter.com/yourname" target="_blank"><i
                                     class="fab fa-twitter"></i></a></li> -->
-                        <li class="list-inline-item"><a href="www.linkedin.com/in/biswajit-jena-a5b401230" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/Ahrvzihsahst/My_Projects" target="_blank"><i
-                                    class="fab fa-github"></i></a></li>
+                        <li class="list-inline-item"><a href="www.linkedin.com/in/biswajit-jena-a5b401230"
+                                target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/Ahrvzihsahst/My_Projects"
+                                target="_blank"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -545,4 +590,5 @@
         </div>
     </footer>
 </body>
+
 </html>
