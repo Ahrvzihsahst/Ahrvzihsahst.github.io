@@ -26,6 +26,7 @@ p {
 .navbar1 {
     margin-left: -120px;
     font-size: 16px;
+    
     /* Adjust font size */
 }
 
@@ -179,8 +180,8 @@ a {
         /* Adjust the value to control the space between paragraphs */
     }
 
-    .mainfooter {
-        height: 50px;
+    .footer {
+        height: 10px;
     }
 
 
@@ -229,3 +230,4 @@ a {
     color: #f5f125;
     font-size: 16px;
 }
+

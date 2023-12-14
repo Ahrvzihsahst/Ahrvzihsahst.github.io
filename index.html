@@ -16,6 +16,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5v3wLbQyAxkZv6UoXnEf+VZNhHlJVYOeKnN0W8lPbNtjIwLbDtOQkZvUUuIJbRnAfPuNbNmVrMJXyCfOtCp+pNhLlhVVpDgQcOqHNvpRtWGhMVo4Ov0ZvUcRn7bRbAQPQPZiOqRFVwFUmNsFcWOQpNiOdRMkOe1nDsFYNvwR0AJhXbOGUhLdRVVkFKnNs4OJPpXdWC8LcB/AQ09qFdBVGFVnqEyCpFKnD0ZcWvzBNhOd+VYOZrjNsWcNMpR93IwLFsOOQsUvUoEcTbIcB8PuWBpTiEkLX8hIc6cjPbCmMiN+nCgdvNbRRKWcEvHtWmO/2/cEtTcXiM/OIeEOdJMVyv1nSsFcjPXSr3IQMbvOOvkUvFdLHGbIbAk+BNHnqhBViFgUuSdH2PdBXhO7RyCkLKQ==" crossorigin="anonymous">
 
 </head>
 
@@ -40,12 +42,11 @@
         </div>
         <div>
             <div class="profileimage">
-                <!-- <img src="https://media.istockphoto.com/id/1300512215/photo/headshot-portrait-of-smiling-ethnic-businessman-in-office.jpg?s=612x612&w=0&k=20&c=QjebAlXBgee05B3rcLDAtOaMtmdLjtZ5Yg9IJoiy-VY="
-                alt="ppimage"> -->
+
             </div>
         </div>
     </header>
-
+    
     <!-- About me Section -->
     <style>
         .my-linkedin-badge {
@@ -55,7 +56,7 @@
             /* Set the height you desire */
         }
     </style>
-    <section id="about" class="container my-5">
+    <section id="about" class="container my-5" style = 'margin-top: 0'>
         <div class="row">
             <h2 class="display-4">About Me</h2>
             <p class="col-lg-12">I'm a passionate and results-driven data science enthusiast with a love for turning data
@@ -66,8 +67,8 @@
             </p>
         </div>
     </section>
-    <section id="certificates" class="container my-5">
-        <h2 class="display-6">Certificates</h2>
+    <section id="certificates" class="container my-5" style = 'margin-top: 0'>
+        <h2 class="display-4">Certificates</h2>
         <div class="certificates-container">
             <!-- Certificate 5 -->
             <div class="certificate">
@@ -94,15 +95,16 @@
                 <img src="image/LearnTube Machine Learning Certificate.jpeg" alt="Certificate 3">
                 <p>Machine Learning</p>
             </div>
-            <!-- Certificate 4 -->
             <div class="certificate">
                 <img src="image/Biswajit Jena_Python Nano Degree Course_page-0001.jpg" alt="Certificate 3">
                 <p>Python Programming</p>
             </div>
-            <!-- <div class="certificate">
-                <img src="image/Biswajit Jena_Python Nano Degree Course_page-0001.jpg" alt="Certificate 3">
-                <p>Python Programming</p>
-            </div> -->
+            <style>
+                .certificate {
+                    width: 350px; /* Adjust the width as per your requirement */
+                    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}
+            </style>
             <!-- <div class="certificate">
                 <img src="image/Biswajit Jena_Python Nano Degree Course_page-0001.jpg" alt="Certificate 3">
                 <p>Python Programming</p>
@@ -112,21 +114,18 @@
     </section>
     
     <!-- Project Section -->
-    <section id="portfolio" class="container my-5">
+    <section id="portfolio" class="container my-5" style = 'margin-top: 0'>
         <h2 class="display-4">My Projects</h2>
         <!-- Add your projects here using Bootstrap components -->
         <div class="row">
             <!-- Project 1 -->
-            <div class="col-lg-6">
-                <div class="card mb-4">
+            <div class="col-lg-3">
+                <div class="card mb-1">
                     <img src="image/1656983194311.jpeg" class="card-img-top" alt="Project 1"
                         style="max-height: 250px; ">
                     <div class="card-body">
-                        <h3 class="card-title">Default Bank Loan Analysis</h3>
-                        <p class="card-text">This project delves into the process of identifying potential loan
-                            defaulters, a critical concern for financial institutions. By harnessing the power of data
-                            analysis,I aim to provide data-driven insights that enable banks and lending institutions to
-                            make informed decisions while minimizing risk.</p>
+                        <h3 class="card-title">Exploratory data analysis</h3>
+                        <p class="card-text"></p>
                         <a href="https://github.com/Ahrvzihsahst/My_Projects/blob/main/Data%20Science/EDA/Loan_Analysis/Bank%20Loan%20Default%20Risk%20Analysis.ipynb"
                             target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
                     </div>
@@ -134,78 +133,105 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="col-lg-6">
-                <div class="card mb-4">
-                    <img src="image/Ml Customer Churn.jpg" class="card-img-top" alt="Project 2"
-                        style="max-height: 202px;">
+            <div class="col-lg-3">
+                <div class="card mb-1">
+                    <img src="image/Machine Learning.jpg" class="card-img-top" alt="Project 2"
+                        style="max-height: 200px;">
                     <div class="card-body">
-                        <h3 class="card-title">Customer Churn Analysis</h3>
-                        <p class="card-text">Customer churn, the rate at which customers stop doing business with a
-                            company, is a critical concern for businesses across various industries. To address this
-                            challenge, i have developed a predictive customer churn analysis system using cutting-edge
-                            machine learning algorithms.
-                            My project aims to proactively identify and predict customers who are likely to churn,
-                            allowing businesses to take preventive actions and retain valuable customers.
-                        </p>
-                        <a href="https://github.com/Ahrvzihsahst/My_Projects/blob/main/Data%20Science/Machine%20Learning/Customer%20Churn%20Analysis/Customer%20Churn%20Analysis.ipynb" 
+                        <h3 class="card-title">Machine Learning</h3>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/Ahrvzihsahst/My_Projects/tree/main/Data%20Science/Machine%20Learning" 
                         target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="col-lg-6">
-                <div class="card mb-4">
-                    <img src="image/Sentiment analysis.png" class="card-img-top" alt="Project 2"
-                        style="max-height: 220px;">
+            <div class="col-lg-3">
+                <div class="card mb-1">
+                    <img src="image/nlp.jpg" class="card-img-top" alt="Project 2"
+                        style="max-height: 170px;">
                     <div class="card-body">
-                        <h3 class="card-title">Sentimental Analysis</h3>
-                        <p class="card-text">In the age of the internet, the world is awash with text data, from social
-                            media posts and customer reviews to news articles and blog comments. But how can we make
-                            sense of this vast sea of information? That's where Sentiment Analysis comes in.
-                        </p>
-                        <p>My project, "Sentiment Analysis for Understanding Public Perception," harnesses the power of
-                            natural language processing and machine learning to dive into the sentiments expressed in
-                            text.</p>
-                        <a href="https://github.com/Ahrvzihsahst/My_Projects/blob/main/Data%20Science/NLP/Customer%20Review%20ML%20On%20top%20of%20NLP/ML%20Classification%20on%20top%20of%20NLP%20for%20review%20prediction.ipynb" 
+                        <h3 class="card-title">Natural Language Processing</h3>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/Ahrvzihsahst/My_Projects/tree/main/Data%20Science/NLP" 
                         target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project 4 -->
-            <div class="col-lg-6">
-                <div class="card mb-4">
-                    <img src="image/Image Classification.webp" class="card-img-top" alt="Project 2"
+            <div class="col-lg-3">
+                <div class="card mb-1">
+                    <img src="image/deep learning.jpg" class="card-img-top" alt="Project 2"
                         style="max-height: 210px;">
                     <div class="card-body">
-                        <h3 class="card-title">Image Classification for Precise Medical Diagnosis</h3>
-                        <p class="card-text">In the world of healthcare, accurate and timely diagnosis can be a matter
-                            of life and death. My groundbreaking project, "Image Classification for Medical Diagnosis,"
-                            stands at the forefront of a transformative era in the field of medical diagnostics. By
-                            harnessing the power of artificial intelligence and computer vision, we are reshaping the
-                            way medical professionals approach the assessment of patient health.
-                        </p>
-                        <a href="#projectModal2" target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
+                        <h3 class="card-title">Deep Learning</h3>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/Ahrvzihsahst/My_Projects/tree/main/Data%20Science/Deep%20Learning/Image_Classification_Cifar-10_data" target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-lg-3">
+                <div class="card mb-1">
+                    <img src="image/computer vision.jpg" class="card-img-top" alt="Project 2"
+                        style="max-height: 210px;">
+                    <div class="card-body">
+                        <h3 class="card-title">Computer Vision</h3>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/Ahrvzihsahst/My_Projects/tree/main/Data%20Science/Computer%20Vision/Vechile%20detection%20and%20count%20the%20no" target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="col-lg-3">
+                <div class="card mb-1">
+                    <img src="image/recommender system.jpg" class="card-img-top" alt="Project 2"
+                        style="max-height: 170px;">
+                    <div class="card-body">
+                        <h3 class="card-title">Recommender system</h3>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/Ahrvzihsahst/My_Projects/tree/main/Data%20Science/Recommender%20System/Book%20Recommender%20System" target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Python Project -->
+            <div class="col-lg-3">
+                <div class="card mb-1">
+                    <img src="image/python 2.jpg" class="card-img-top" alt="Project 2"
+                        style="max-height: 200px;">
+                    <div class="card-body">
+                        <h3 class="card-title">Python</h3>
+                        <p class="card-text"></p>
+                        <a href="https://github.com/Ahrvzihsahst/My_Projects/tree/main/Data%20Science/Python%20Projects/Countdown%20Timer" target="_blank" class="btn btn-primary" data-toggle="modal">View Details</a>
                     </div>
                 </div>
             </div>
             <!-- Add more project cards as needed -->
         </div>
     </section>
-
+    <style>
+        .card {
+            min-height: 290px; /* You can adjust this value according to your needs */
+        }
+        .btn {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
     <!-- Skill Section -->
     <section id="skills" class="container my-5">
         <h2 class="display-4">Skills</h2>
         <div class="row">
             <!-- Skill Card 1 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Database Management</h4>
-                        <p class="card-text" style="text-align: center;">Proficient in <strong>SQL , NoSQL (e.g.,
-                                MongoDB)</strong>
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>SQL</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -219,12 +245,12 @@
             </div>
             <!-- Skill Card 2 -->
             <div class="col-md-4">
-                <div class="card1 md-4">
+                <div class="card1 md-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-code fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Programming Languages</h4>
                         <p class="card-text" style="text-align: center;">Proficient in
-                            <strong>Python , R</strong>
+                            <strong>Python</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -238,12 +264,12 @@
             </div>
             <!-- Skill Card 3 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-chart-bar fa-3x"></i> <!-- Font Awesome icon for coding -->
-                        <h4 class="card-title" style="color: #291ce0">Data Analysis and Visualization</h4>
+                        <h4 class="card-title" style="color: #291ce0">Data Analysis</h4>
                         <p class="card-text" style="text-align: center;">Proficient in
-                            <strong>Pandas , NumPy , Matplotlib , Seaborn , Plotly</strong>
+                            <strong>Pandas , NumPy, Excel</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -257,8 +283,7 @@
             </div>
             <!-- Skill Card 4 -->
             <div class="col-md-4">
-                <div class="card1 mb-4"
-                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Data Preprocessing</h4>
@@ -278,13 +303,13 @@
             </div>
             <!-- Skill Card 5 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-chart-line fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Statistical Analysis:</h4>
                         <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                Hypothesis Testing , Regression Analysis , Time Series Analysis</strong>
+                                Descriptive & Inferential, Hypothesis Testing</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -298,12 +323,12 @@
             </div>
             <!-- Skill Card 6 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-chart-pie fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Data Visualization Tools:</h4>
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                Tableau , Power BI</strong>
+                                Tableau, PowerBi</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -317,14 +342,13 @@
             </div>
             <!-- Skill Card 7 -->
             <div class="col-md-4">
-                <div class="card1 mb-4"
-                    style="background-color: #ffdb58; transition: background-color 0.4s; box-shadow: 0 4px 6px rgba(12, 12, 12, 0.1);">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-cogs fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Machine Learning</h4>
                         <!--p class="card-text">Proficient in Python, JavaScript, and more.</p-->
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                Scikit-Learn , TensorFlow , Keras , PyTorch</strong>
+                                Regression, Classification & Clustering</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -338,12 +362,12 @@
             </div>
             <!-- Skill Card 8 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-book fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Data Science Libraries:</h4>
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                StatsModels , XGBoost , LightGBM , CatBoost</strong>
+                                scikit learn, tensorflow, openCv, NLTK, Spacy</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -357,13 +381,12 @@
             </div>
             <!-- Skill card 9 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-brain fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Deep Learning</h4>
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                Convolutional Neural Networks (CNN) , Recurrent Neural Networks (RNN) , Natural Language
-                                Processing (NLP)</strong>
+                                CNN, RNN, NLP</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -377,7 +400,7 @@
             </div>
             <!-- Skill Card 10 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Big Data Technologies</h4>
@@ -395,11 +418,11 @@
             </div>
             <!-- Skill Card 11 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-cloud fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Cloud Platform</h4>
-                        <p class="card-text" style="text-align: center;">Proficient in <strong>Azure</strong>
+                        <p class="card-text" style="text-align: center;">Proficient in <strong>Azure, DataBricks</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -413,12 +436,12 @@
             </div>
             <!-- Skill Card 12 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-users fa-3x"></i> <!-- Font Awesome icon for coding -->
-                        <h4 class="card-title" style="color: #291ce0">Machine Learning Operations (MLOps)</h4>
+                        <h4 class="card-title" style="color: #291ce0">MLOps</h4>
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                Model Deployment , Model Monitoring</strong>
+                                Deployment & Monitoring</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -432,7 +455,7 @@
             </div>
             <!-- Skill Card 13 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-code-branch fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h4 class="card-title" style="color: #291ce0">Version Control</h4>
@@ -450,12 +473,12 @@
             </div>
             <!-- Skill Card 14 -->
             <div class="col-md-4">
-                <div class="card1 mb-4">
+                <div class="card1 mb-4" style="padding: 10px; margin: 5px;">
                     <div class="card-body">
                         <i class="fas fa-database fa-3x"></i> <!-- Font Awesome icon for coding -->
                         <h3 class="card-title" style="color: #291ce0">Data Storytelling:</h3>
                         <p class="card-text" style="text-align: center;">Proficient in <strong>
-                                Effective Communication of Data Insights</strong>
+                                Effective Communication</strong>
                         </p>
                         <div class="skill-rating">
                             <span class="star">&#9733;</span>
@@ -548,7 +571,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact me section -->
     <section id="contact" class="container my-5">
         <div class="row">
